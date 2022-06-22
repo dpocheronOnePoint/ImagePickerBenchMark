@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		D33D2DB6286304A0007142E8 /* ImagePickersBenchmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33D2DB5286304A0007142E8 /* ImagePickersBenchmarkApp.swift */; };
-		D33D2DB8286304A0007142E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33D2DB7286304A0007142E8 /* ContentView.swift */; };
 		D33D2DBA286304A2007142E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33D2DB9286304A2007142E8 /* Assets.xcassets */; };
 		D33D2DBD286304A2007142E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33D2DBC286304A2007142E8 /* Preview Assets.xcassets */; };
+		D3A07416286309230034CF77 /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A07415286309230034CF77 /* PHPickerView.swift */; };
+		D3A07418286309320034CF77 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A07417286309320034CF77 /* ImagePicker.swift */; };
+		D3A0741A2863098C0034CF77 /* PHPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A074192863098C0034CF77 /* PHPickerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D33D2DB2286304A0007142E8 /* ImagePickersBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePickersBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33D2DB5286304A0007142E8 /* ImagePickersBenchmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickersBenchmarkApp.swift; sourceTree = "<group>"; };
-		D33D2DB7286304A0007142E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D33D2DB9286304A2007142E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33D2DBC286304A2007142E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3A07415286309230034CF77 /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
+		D3A07417286309320034CF77 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		D3A074192863098C0034CF77 /* PHPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,8 @@
 		D33D2DB4286304A0007142E8 /* ImagePickersBenchmark */ = {
 			isa = PBXGroup;
 			children = (
+				D3A07414286309070034CF77 /* PHPickerViewController */,
 				D33D2DB5286304A0007142E8 /* ImagePickersBenchmarkApp.swift */,
-				D33D2DB7286304A0007142E8 /* ContentView.swift */,
 				D33D2DB9286304A2007142E8 /* Assets.xcassets */,
 				D33D2DBB286304A2007142E8 /* Preview Content */,
 			);
@@ -65,6 +69,16 @@
 				D33D2DBC286304A2007142E8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3A07414286309070034CF77 /* PHPickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3A07417286309320034CF77 /* ImagePicker.swift */,
+				D3A074192863098C0034CF77 /* PHPickerViewModel.swift */,
+				D3A07415286309230034CF77 /* PHPickerView.swift */,
+			);
+			path = PHPickerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +97,8 @@
 			dependencies = (
 			);
 			name = ImagePickersBenchmark;
+			packageProductDependencies = (
+			);
 			productName = ImagePickersBenchmark;
 			productReference = D33D2DB2286304A0007142E8 /* ImagePickersBenchmark.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,8 @@
 				Base,
 			);
 			mainGroup = D33D2DA9286304A0007142E8;
+			packageReferences = (
+			);
 			productRefGroup = D33D2DB3286304A0007142E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D33D2DB8286304A0007142E8 /* ContentView.swift in Sources */,
+				D3A07418286309320034CF77 /* ImagePicker.swift in Sources */,
+				D3A0741A2863098C0034CF77 /* PHPickerViewModel.swift in Sources */,
 				D33D2DB6286304A0007142E8 /* ImagePickersBenchmarkApp.swift in Sources */,
+				D3A07416286309230034CF77 /* PHPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

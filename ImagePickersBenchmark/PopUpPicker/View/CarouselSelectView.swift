@@ -8,7 +8,7 @@
 import SwiftUI
 import PhotosUI
 
-struct MainTabView: View {
+struct CarouselSelectView: View {
     
     @State var showPicker: Bool = false
     @State var pickerImages: [UIImage] = []
@@ -69,6 +69,6 @@ struct MainTabView: View {
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView()
+        CarouselSelectView()
     }
 }

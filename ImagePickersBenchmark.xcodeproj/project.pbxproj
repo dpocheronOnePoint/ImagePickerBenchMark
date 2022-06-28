@@ -13,11 +13,12 @@
 		D33D2DB6286304A0007142E8 /* ImagePickersBenchmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33D2DB5286304A0007142E8 /* ImagePickersBenchmarkApp.swift */; };
 		D33D2DBA286304A2007142E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33D2DB9286304A2007142E8 /* Assets.xcassets */; };
 		D33D2DBD286304A2007142E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33D2DBC286304A2007142E8 /* Preview Assets.xcassets */; };
-		D39732612869DB1F007A634B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39732602869DB1F007A634B /* MainTabView.swift */; };
+		D39732612869DB1F007A634B /* CarouselSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39732602869DB1F007A634B /* CarouselSelectView.swift */; };
 		D3A07416286309230034CF77 /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A07415286309230034CF77 /* PHPickerView.swift */; };
 		D3A07418286309320034CF77 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A07417286309320034CF77 /* ImagePicker.swift */; };
 		D3A0741A2863098C0034CF77 /* PHPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A074192863098C0034CF77 /* PHPickerViewModel.swift */; };
 		D3F6758E286AD3100082D51D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6758D286AD3100082D51D /* Extensions.swift */; };
+		D3F67598286AF3400082D51D /* LazyGridSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F67597286AF3400082D51D /* LazyGridSelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +29,12 @@
 		D33D2DB5286304A0007142E8 /* ImagePickersBenchmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickersBenchmarkApp.swift; sourceTree = "<group>"; };
 		D33D2DB9286304A2007142E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33D2DBC286304A2007142E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D39732602869DB1F007A634B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D39732602869DB1F007A634B /* CarouselSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSelectView.swift; sourceTree = "<group>"; };
 		D3A07415286309230034CF77 /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
 		D3A07417286309320034CF77 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		D3A074192863098C0034CF77 /* PHPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewModel.swift; sourceTree = "<group>"; };
 		D3F6758D286AD3100082D51D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D3F67597286AF3400082D51D /* LazyGridSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridSelectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				D324DBC22869C98200FE71A0 /* PopupImagePickerView.swift */,
-				D39732602869DB1F007A634B /* MainTabView.swift */,
+				D39732602869DB1F007A634B /* CarouselSelectView.swift */,
+				D3F67597286AF3400082D51D /* LazyGridSelectView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,11 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F67598286AF3400082D51D /* LazyGridSelectView.swift in Sources */,
 				D324DBC92869CA4D00FE71A0 /* ImagePickerViewModel.swift in Sources */,
 				D3F6758E286AD3100082D51D /* Extensions.swift in Sources */,
 				D324DBC62869C99C00FE71A0 /* ImageAsset.swift in Sources */,
 				D3A07418286309320034CF77 /* ImagePicker.swift in Sources */,
-				D39732612869DB1F007A634B /* MainTabView.swift in Sources */,
+				D39732612869DB1F007A634B /* CarouselSelectView.swift in Sources */,
 				D3A0741A2863098C0034CF77 /* PHPickerViewModel.swift in Sources */,
 				D324DBC32869C98200FE71A0 /* PopupImagePickerView.swift in Sources */,
 				D33D2DB6286304A0007142E8 /* ImagePickersBenchmarkApp.swift in Sources */,

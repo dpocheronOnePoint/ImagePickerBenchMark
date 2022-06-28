@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PHPickerView: View {
     @ObservedObject private var phpickerViewModel = PHPickerViewModel()
-    
     @State private var showingImagePicker = false
+    
     var body: some View {
         VStack {
             if((phpickerViewModel.profileImage) != nil) {
@@ -34,7 +34,7 @@ struct PHPickerView: View {
             phpickerViewModel.loadProfileImage()
         }
         .sheet(isPresented: $showingImagePicker) {
-            ImagePicker(image: $phpickerViewModel.profileInputImage, selectionLimit: 10)
+            ImagePicker(image: $phpickerViewModel.profileInputImage, selectionLimit: 10, bindingAssetIdentifierArray: $phpickerViewModel.assetIdentifierArray, assetIdentifierArray: phpickerViewModel.assetIdentifierArray)
         }
     }
 }

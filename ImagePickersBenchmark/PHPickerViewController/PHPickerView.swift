@@ -21,20 +21,20 @@ struct PHPickerView: View {
                 Image(systemName: "person.fill.viewfinder")
                     .resizable()
                     .frame(width: 100, height: 100)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(.gray)
                     .padding(30)
                     .background(Color.primary)
                     .cornerRadius(100)
-                    .onTapGesture {
-                        showingImagePicker = true
-                    }
             }
+        }
+        .onTapGesture {
+            showingImagePicker = true
         }
         .onChange(of: phpickerViewModel.profileInputImage) { _ in
             phpickerViewModel.loadProfileImage()
         }
         .sheet(isPresented: $showingImagePicker) {
-            ImagePicker(image: $phpickerViewModel.profileInputImage)
+            ImagePicker(image: $phpickerViewModel.profileInputImage, selectionLimit: 10)
         }
     }
 }

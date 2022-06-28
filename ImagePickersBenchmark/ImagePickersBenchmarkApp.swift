@@ -11,7 +11,7 @@ import SwiftUI
 struct ImagePickersBenchmarkApp: App {
     var body: some Scene {
         WindowGroup {
-            PHPickerView()
+            MainTabView()
         }
     }
 }
